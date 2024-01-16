@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Build image
-      run: sudo curl -s https://gitlab.com/akoziland/akoziland-linux/-/raw/main/build.sh | /bin/bash -s https://gitlab.com/akoziland/akoziland-linux
+      run: curl -s https://gitlab.com/akoziland/akoziland-linux/-/raw/main/build.sh | sudo /bin/bash -s https://gitlab.com/akoziland/akoziland-linux
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
