@@ -19,5 +19,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Akoziland
-        path: /akozi-build-files/boot
+        path: akoziland-linux/out/boot
         retention-days: 3
