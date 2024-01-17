@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Build image
-      run: git clone https://gitlab.com/akoziland/akoziland-linux && ./akoziland-linux/build.sh https://gitlab.com/akoziland-initramfs
+      run: git clone https://gitlab.com/akoziland/akoziland-linux && sudo ./akoziland-linux/build.sh https://gitlab.com/akoziland-initramfs
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
